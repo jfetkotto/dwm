@@ -16,14 +16,14 @@ static const char *fonts[]          = {
 
 static const char dmenufont[]       = "Iosevka:antialias=true:size=10:style=bold";
 
-static const char col_bg[]          = "#404040";
-static const char col_fg[]          = "#d7d7d7";
-static const char col_red[]         = "#d75f5f";
-static const char col_green[]       = "#87af5f";
-static const char col_yellow[]      = "#ffaf5f";
-static const char col_blue[]        = "#87afd7";
-static const char col_magenta[]     = "#8787af";
-static const char col_cyan[]        = "#5f8787";
+static const char col_bg[]          = "#eeeeee";
+static const char col_fg[]          = "#4d4d4c";
+static const char col_red[]         = "#d7005f";
+static const char col_green[]       = "#718c00";
+static const char col_yellow[]      = "#d75f00";
+static const char col_blue[]        = "#4271ae";
+static const char col_magenta[]     = "#8959a8";
+static const char col_cyan[]        = "#3e999f";
 
 
 static const unsigned int baralpha  = 0xff;
@@ -32,7 +32,7 @@ static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_fg, col_bg, col_bg },
-	[SchemeSel]  = { col_red, col_bg,  col_fg  },
+	[SchemeSel]  = { col_red, col_bg,  col_red  },
 };
 static const unsigned int alphas[][3] ={
         [SchemeNorm] = { OPAQUE, baralpha, borderalpha },
@@ -78,7 +78,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_bg , "-nf", col_fg, "-sb", col_bg, "-sf", col_red, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *roficmd[] = {"rofi", "-modi", "drun","-font","Iosevka 13", "-theme", "base16-zenburn", "-lines", "5", "-width", "30", "-show-icons", "-show", "drun",NULL};
+static const char *roficmd[] = {"rofi", "-modi", "drun","-font","Iosevka 13", "-theme", "paper", "-lines", "5", "-width", "30", "-show-icons", "-show", "drun",NULL};
 
 /* MEDIA KEYS */
 static const char *volumedowncmd[] = {"pamixer","-d","5", NULL};
