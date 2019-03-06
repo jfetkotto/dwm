@@ -2,11 +2,11 @@
 #include <X11/XF86keysym.h>
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappx     = 0;
 static const int showbar            = 1;        /* 0 means no bar */
-static const int topbar             = 1;        /* 0 means bottom bar */
+static const int topbar             = 0;        /* 0 means bottom bar */
 
 static const char *fonts[]          = {
         "Iosevka:antialias=true:size=10:style=bold",
@@ -31,12 +31,12 @@ static const unsigned int borderalpha = OPAQUE;
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_fg, col_bg, col_bg },
-	[SchemeSel]  = { col_red, col_bg,  col_red  },
+  [SchemeNorm] = { col_fg, col_bg, col_bg },
+  [SchemeSel]  = { col_bg, col_magenta,  col_magenta },
 };
 static const unsigned int alphas[][3] ={
-        [SchemeNorm] = { OPAQUE, baralpha, borderalpha },
-        [SchemeSel]  = { OPAQUE, baralpha, borderalpha },
+  [SchemeNorm] = { OPAQUE, baralpha, borderalpha },
+  [SchemeSel]  = { OPAQUE, baralpha, borderalpha },
 };
 
 /* tagging */
@@ -81,8 +81,8 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *roficmd[] = {"rofi", "-modi", "drun","-font","Iosevka 13", "-theme", "paper", "-lines", "5", "-width", "30", "-show-icons", "-show", "drun",NULL};
 
 /* MEDIA KEYS */
-static const char *volumedowncmd[] = {"pamixer","-d","5", NULL};
-static const char *volumeupcmd[] = {"pamixer","-i","5", NULL};
+static const char *volumedowncmd[] = {"pamixer","--allow-boost","-d","5", NULL};
+static const char *volumeupcmd[] = {"pamixer","--allow-boost","-i","5", NULL};
 static const char *volumetogglecmd[] = {"pamixer","-t", NULL};
 static const char *brightnessupcmd[] = {"light","-A","10", NULL};
 static const char *brightnessdowncmd[] = {"light","-U","10", NULL};
