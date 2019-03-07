@@ -2,11 +2,11 @@
 #include <X11/XF86keysym.h>
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappx     = 0;
 static const int showbar            = 1;        /* 0 means no bar */
-static const int topbar             = 0;        /* 0 means bottom bar */
+static const int topbar             = 1;        /* 0 means bottom bar */
 
 static const char *fonts[]          = {
         "Iosevka:antialias=true:size=10:style=bold",
@@ -32,7 +32,7 @@ static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
   [SchemeNorm] = { col_fg, col_bg, col_bg },
-  [SchemeSel]  = { col_bg, col_magenta,  col_magenta },
+  [SchemeSel]  = { col_magenta, col_bg,  col_magenta },
 };
 static const unsigned int alphas[][3] ={
   [SchemeNorm] = { OPAQUE, baralpha, borderalpha },
