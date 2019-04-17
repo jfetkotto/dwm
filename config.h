@@ -49,6 +49,9 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+  { "MATLAB R2019a - academic use", NULL, NULL, 0, 1, -1 },
+  { "MATLABWindow", NULL, NULL, 0, 1, -1 },
+  { "MATLAB R2019a", NULL, NULL, 0, 1, -1 },
 };
 
 /* layout(s) */
