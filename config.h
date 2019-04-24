@@ -16,14 +16,14 @@ static const char *fonts[]          = {
 
 static const char dmenufont[]       = "Iosevka:antialias=true:size=10:style=bold";
 
-static const char col_bg[]          = "#404040";
-static const char col_fg[]          = "#d7d7d7";
-static const char col_red[]         = "#d75f5f";
-static const char col_green[]       = "#87af5f";
-static const char col_yellow[]      = "#ffaf5f";
-static const char col_blue[]        = "#87afd7";
-static const char col_magenta[]     = "#8787af";
-static const char col_cyan[]        = "#5f8787";
+static const char col_bg[]          = "#1c2023";
+static const char col_fg[]          = "#c7ccd1";
+static const char col_red[]         = "#c7ae95";
+static const char col_green[]       = "#95c7ae";
+static const char col_yellow[]      = "#aec795";
+static const char col_blue[]        = "#ae95c7";
+static const char col_magenta[]     = "#c795ae";
+static const char col_cyan[]        = "#95aec7";
 
 
 static const unsigned int baralpha  = 0xff;
