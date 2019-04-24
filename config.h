@@ -81,7 +81,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_bg , "-nf", col_fg, "-sb", col_bg, "-sf", col_red, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *roficmd[] = {"rofi", "-modi", "drun","-font","Iosevka 13", "-theme", "base16-zenburn", "-lines", "5", "-width", "30", "-show-icons", "-show", "drun",NULL};
+static const char *roficmd[] = {"rofi", "-modi", "drun","-font","Iosevka 13", "-theme", "base16-ashes", "-lines", "5", "-width", "30", "-show-icons", "-show", "drun",NULL};
 
 /* MEDIA KEYS */
 static const char *volumedowncmd[] = {"pamixer","-d","5", NULL};
