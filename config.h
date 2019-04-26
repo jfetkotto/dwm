@@ -10,8 +10,8 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 
 static const char *fonts[]          = {
         "Iosevka:antialias=true:size=10:style=bold",
-        "Font Awesome 5 Free:antialias=true:size=9:style=solid",
-        "Font Awesome 5 Brands:antialias=true:size=9:style=solid",
+        "Font Awesome 5 Free:antialias=true:size=10:style=solid",
+        "Font Awesome 5 Brands:antialias=true:size=10:style=solid",
 };
 
 static const char dmenufont[]       = "Iosevka:antialias=true:size=10:style=bold";
