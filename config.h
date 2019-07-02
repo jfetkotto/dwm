@@ -40,7 +40,7 @@ static const unsigned int alphas[][3] ={
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5"};
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9"};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -49,6 +49,9 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+  { "MATLAB R2019a - academic use", NULL, NULL, 1 << 1, 1, -1 },
+  { "MATLABWindow", NULL, NULL, 1 << 1, 1, -1 },
+  { "MATLAB R2019a", NULL, NULL, 1 << 1, 1, -1 },
 };
 
 /* layout(s) */
@@ -81,8 +84,8 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *roficmd[] = {"rofi", "-modi", "drun","-font","Iosevka 13", "-theme", "paper", "-lines", "5", "-width", "30", "-show-icons", "-show", "drun",NULL};
 
 /* MEDIA KEYS */
-static const char *volumedowncmd[] = {"pamixer","--allow-boost","-d","5", NULL};
-static const char *volumeupcmd[] = {"pamixer","--allow-boost","-i","5", NULL};
+static const char *volumedowncmd[] = {"pamixer","-d","5", NULL};
+static const char *volumeupcmd[] = {"pamixer","-i","5", NULL};
 static const char *volumetogglecmd[] = {"pamixer","-t", NULL};
 static const char *brightnessupcmd[] = {"light","-A","10", NULL};
 static const char *brightnessdowncmd[] = {"light","-U","10", NULL};
