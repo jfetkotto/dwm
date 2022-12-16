@@ -17,7 +17,7 @@ static const char *colors[][3]      = {
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
 
-static const char *fonts[]          = { 
+static const char *fonts[]          = {
 	"Iosevka:antialias=true:size=10:style=bold",
 	"Font Awesome 5 Free:antialias=true:size=9:style=solid",
 	"Font Awesome 5 Brands:antialias=true:size=9:style=solid"
