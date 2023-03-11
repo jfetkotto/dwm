@@ -5,15 +5,15 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char col_bg[]          = "#32302f";
-static const char col_fg[]          = "#e2d3ba";
-static const char col_red[]         = "#ea6962";
-static const char col_green[]       = "#a9b665";
-static const char col_blue[]        = "#7daea3";
+static const char col_bg[]          = "#303446";
+static const char col_fg[]          = "#C6D0F5";
+static const char col_red[]         = "#E78284";
+static const char col_green[]       = "#A6D189";
+static const char col_blue[]        = "#8CAAEE";
 static const char *colors[][3]      = {
         /*               fg         bg         border   */
         [SchemeNorm] = { col_fg, col_bg,    col_bg },
-        [SchemeSel]  = { col_bg, col_green, col_green },
+        [SchemeSel]  = { col_bg, col_fg,    col_blue },
 };
 
 static const char dmenufont[]       = "Hack Nerd Font:size=10:style=bold:antialias=true";
@@ -59,7 +59,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_bg, "-nf", col_fg, "-sb", col_green, "-sf", col_bg, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_bg, "-nf", col_fg, "-sb", col_blue, "-sf", col_bg, NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 static const Key keys[] = {
