@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -9,20 +9,34 @@ static const char col_bg[]          = "#303446";
 static const char col_fg[]          = "#C6D0F5";
 static const char col_red[]         = "#E78284";
 static const char col_green[]       = "#A6D189";
+static const char col_yellow[]      = "#E5C890";
 static const char col_blue[]        = "#8CAAEE";
-static const char *colors[][3]      = {
+static const char col_pink[]        = "#F4B8E4";
+static const char col_cyan[]        = "#81C8BE"; static const char *colors[][3]      = {
         /*               fg         bg         border   */
-        [SchemeNorm] = { col_fg, col_bg,    col_bg },
-        [SchemeSel]  = { col_bg, col_fg,    col_blue },
+        [SchemeNorm] = { col_fg,     col_bg,    col_bg   },
+        [SchemeSel]  = { col_yellow, col_bg,    col_blue },
 };
 
-static const char dmenufont[]       = "Hack Nerd Font:size=10:style=bold:antialias=true";
+static const char dmenufont[]       = "Hack Nerd Font:size=12:style=bold:antialias=true";
 static const char *fonts[]          = {
-	"Hack Nerd Font:antialias=true:size=10:style=bold"
+	"Hack Nerd Font:antialias=true:size=12:style=bold"
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5" };
+static const char *tags[] = { "α", "β", "γ", "δ", "ε" };
+
+static const char *tagsel[][2] = {
+	{ col_bg, col_red    },
+	{ col_bg, col_green  },
+	{ col_bg, col_yellow },
+	{ col_bg, col_blue   },
+	{ col_bg, col_pink   },
+	{ col_bg, "#4b0082"  },
+	{ col_bg, "#9400d3"  },
+	{ col_bg, "#ffffff"  },
+	{ col_bg, "#000000"  },
+};
 
 static const Rule rules[] = {
 	/* xprop(1):
