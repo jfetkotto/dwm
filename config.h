@@ -5,14 +5,15 @@ static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char col_bg[]          = "#303446";
-static const char col_fg[]          = "#C6D0F5";
-static const char col_red[]         = "#E78284";
-static const char col_green[]       = "#A6D189";
-static const char col_yellow[]      = "#E5C890";
-static const char col_blue[]        = "#8CAAEE";
-static const char col_pink[]        = "#F4B8E4";
-static const char col_cyan[]        = "#81C8BE"; static const char *colors[][3]      = {
+static const char col_bg[]          = "#2f383e";
+static const char col_fg[]          = "#d3c6aa";
+static const char col_red[]         = "#e67e80";
+static const char col_green[]       = "#a7c080";
+static const char col_yellow[]      = "#dbbc7f";
+static const char col_blue[]        = "#7fbbb3";
+static const char col_pink[]        = "#d699b6";
+static const char col_cyan[]        = "#83c092";
+static const char *colors[][3]      = {
         /*               fg         bg         border   */
         [SchemeNorm] = { col_fg,     col_bg,    col_bg   },
         [SchemeSel]  = { col_yellow, col_bg,    col_blue },
@@ -32,10 +33,10 @@ static const char *tagsel[][2] = {
 	{ col_bg, col_yellow },
 	{ col_bg, col_blue   },
 	{ col_bg, col_pink   },
-	{ col_bg, "#4b0082"  },
-	{ col_bg, "#9400d3"  },
-	{ col_bg, "#ffffff"  },
-	{ col_bg, "#000000"  },
+	{ col_bg, col_fg     },
+	{ col_bg, col_fg     },
+	{ col_bg, col_fg     },
+	{ col_bg, col_fg     },
 };
 
 static const Rule rules[] = {
