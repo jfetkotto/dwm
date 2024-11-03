@@ -5,18 +5,18 @@ static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char col_bg[]          = "#2f383e";
-static const char col_fg[]          = "#d3c6aa";
-static const char col_red[]         = "#e67e80";
-static const char col_green[]       = "#a7c080";
-static const char col_yellow[]      = "#dbbc7f";
-static const char col_blue[]        = "#7fbbb3";
-static const char col_pink[]        = "#d699b6";
-static const char col_cyan[]        = "#83c092";
+static const char col_bg[]          = "#1C1917";
+static const char col_fg[]          = "#B4BDC3";
+static const char col_red[]         = "#DE6E7C";
+static const char col_green[]       = "#819B69";
+static const char col_yellow[]      = "#B77E64";
+static const char col_blue[]        = "#6099C0";
+static const char col_pink[]        = "#B279A7";
+static const char col_cyan[]        = "#66A5AD";
 static const char *colors[][3]      = {
         /*               fg         bg         border   */
         [SchemeNorm] = { col_fg,     col_bg,    col_bg   },
-        [SchemeSel]  = { col_yellow, col_bg,    col_blue },
+        [SchemeSel]  = { col_bg,     col_fg,    col_fg },
 };
 
 static const char dmenufont[]       = "Hack Nerd Font:size=12:style=bold:antialias=true";
@@ -25,18 +25,32 @@ static const char *fonts[]          = {
 };
 
 /* tagging */
-static const char *tags[] = { "α", "β", "γ", "δ", "ε" };
+/*static const char *tags[] = { "α", "β", "γ", "δ", "ε" };*/
+
+/*static const char *tagsel[][2] = {*/
+/*	{ col_bg, col_red    },*/
+/*	{ col_bg, col_green  },*/
+/*	{ col_bg, col_yellow },*/
+/*	{ col_bg, col_blue   },*/
+/*	{ col_bg, col_pink   },*/
+/*	{ col_bg, col_fg     },*/
+/*	{ col_bg, col_fg     },*/
+/*	{ col_bg, col_fg     },*/
+/*	{ col_bg, col_fg     },*/
+/*};*/
+
+static const char *tags[] = { "one", "two", "three", "four", "five" };
 
 static const char *tagsel[][2] = {
-	{ col_bg, col_red    },
-	{ col_bg, col_green  },
-	{ col_bg, col_yellow },
-	{ col_bg, col_blue   },
-	{ col_bg, col_pink   },
-	{ col_bg, col_fg     },
-	{ col_bg, col_fg     },
-	{ col_bg, col_fg     },
-	{ col_bg, col_fg     },
+	{ col_bg, col_fg },
+	{ col_bg, col_fg },
+	{ col_bg, col_fg },
+	{ col_bg, col_fg },
+	{ col_bg, col_fg },
+	{ col_bg, col_fg },
+	{ col_bg, col_fg },
+	{ col_bg, col_fg },
+	{ col_bg, col_fg },
 };
 
 static const Rule rules[] = {
